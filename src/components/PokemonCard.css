@@ -15,7 +15,7 @@
 
 .pokemon-image {
     width: 200px; /* Set the width to 20rem (20 * 10) */
-    height: 100px; /* Set the height to 10rem (20 * 5) */
+    height: 500px; /* Set the height to 10rem (20 * 5) */
     object-fit: contain; /* Preserve aspect ratio */
 }
 

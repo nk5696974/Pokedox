@@ -6,7 +6,8 @@ import axios from 'axios';
 
 const PokemonList = () => {
     const [pokemonList, setPokemonList] = useState([]);
-    const [nextPageUrl, setNextPageUrl] = useState('https://pokeapi.co/api/v2/pokemon');
+    const [nextPageUrl, setNextPageUrl] = useState('https://pokeapi.co/api/v2/pokemon/');
+
 
     const fetchPokemonList = useCallback(async () => {
         try {

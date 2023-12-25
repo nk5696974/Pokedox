@@ -23,8 +23,18 @@ import './PokemonCard.css'; // Import the CSS file for styles
 // PokemonCard.js
 
 const PokemonCard = ({ pokemon }) => {
-    const imageUrl = `https://unpkg.com/pokeapi-sprites@2.0.2/sprites/pokemon/other/dream-world/${pokemon.id}.svg`;
+    //Chatgpt
+    const url = pokemon.url;
 
+    // Use a regular expression to find the numeric part in the URL
+    const match = url.match(/\/(\d+)\/$/);
+
+    // Extract the captured numeric part (if found)
+    const pokemonNumber = match ? match[1] : null;
+
+    console.log(pokemonNumber); // Output: 2
+    const imageUrl = `https://unpkg.com/pokeapi-sprites@2.0.2/sprites/pokemon/other/dream-world/${pokemonNumber}.svg`;
+    // console.log(pokemon)
     return (
         <Card className="pokemon-card">
             <CardMedia
