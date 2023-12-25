@@ -1,0 +1,28 @@
+/* PokemonCard.css */
+.pokemon-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.2s;
+    border: 2px solid #ccc; /* Add border to the card */
+    margin: 10px; /* Add margin to create distance between cards */
+}
+
+.pokemon-card:hover {
+    transform: scale(1.05); /* Increase size on hover */
+}
+
+.pokemon-image {
+    width: 200px; /* Set the width to 20rem (20 * 10) */
+    height: 100px; /* Set the height to 10rem (20 * 5) */
+    object-fit: contain; /* Preserve aspect ratio */
+}
+
+.pokemon-content {
+    flex-grow: 1;
+}
+
+.pokemon-title {
+    margin: 10px 0;
+}
